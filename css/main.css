@@ -1,0 +1,14 @@
+@import url("./section1.css");
+@import url("./section2.css");
+
+.txt__highlight {
+  color: var(--secondary-color-dark);
+}
+
+.txt__white {
+  color: var(--font-white-color);
+}
+
+.txt__black {
+  color: var(--font-black-color);
+}

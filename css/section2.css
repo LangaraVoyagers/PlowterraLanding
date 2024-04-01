@@ -1,0 +1,18 @@
+.main__section2 {
+  display: flex;
+  justify-content: center;
+  background-color: var(--secondary-color-extra-light);
+}
+
+.section2__content {
+  width: 496px;
+  text-align: center;
+}
+
+.section2__content__heading {
+  color: var(--black-color);
+  font-weight: 600;
+  font-size: 2.25rem;
+  line-height: 2.75rem;
+  letter-spacing: 0.045rem;
+}
