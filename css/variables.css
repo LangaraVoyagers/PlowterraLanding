@@ -1,10 +1,23 @@
 :root {
   --border-radius: 8px;
+  --border-radius-2x: 16px;
+  --navmenu-bg-color: rgba(255, 255, 255, 0.859);
   --white-color: #FFFFFF;
   --black-color: #000000;
   --font-white-color: #FFFFFF;
   --font-black-color: #000000;
+  --font-grey-700: #44403C;
+  --font-grey-600: #57534E;
+  --font-grey-400: #A9A29D;
+  --font-grey-300: #D7D3D0;
+  --grey-900: #1C1917;
+  --grey-700: #44403C;
+  --grey-600: #57534E;
+  --grey-400: #A9A29D;
+  --grey-300: #D7D3D0;
   --primary-color-dark: #055E40;
+  --primary-color-extra-light: #E6EFEC;
   --secondary-color-dark: #DF9000;
   --secondary-color-extra-light: #FBF6F2;
+  --mobile-box-padding: 30px;
 }
