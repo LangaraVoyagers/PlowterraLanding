@@ -1,0 +1,60 @@
+.main__section5 {
+  padding-top: 100px;
+  padding-bottom: 250px;
+  background-color: var(--white-color);
+}
+
+.section5__wrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.section5__content {
+  width: 520px;
+  text-align: center;
+}
+
+.section5__content__heading {
+  font-size: 2.25rem;
+  font-weight: 600;
+}
+
+.developer__col,
+.designer__col {
+  width: 78rem;
+  display: flex;
+  gap: 30px;
+}
+
+.section5__grid>p {
+  margin-top: 80px;
+}
+
+.linkedin__wrapper {
+  flex: 25%;
+}
+
+.linkedin__wrapper>a>img {
+  width: 100%;
+}
+
+.linkedin__wrapper a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  color: var(--font-grey-700);
+}
+
+.linkedin__tag {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: 600;
+}
+
+.linkedin__icon {
+  width: 28px;
+}

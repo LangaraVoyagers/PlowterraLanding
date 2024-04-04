@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>About | Plowterra</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="./style.css"/>
+  <script src="./script.js" defer></script>
 </head>
 <body class="container">
   <header>
@@ -17,77 +18,281 @@
       </div>
       <div>
         <ul class="navbar__menu__list">
-          <li><a href="#">Benifits</a></li>
-          <li><a href="#">Features</a></li>
-          <li><a href="#">Pricing</a></li>
-          <li><a href="#">Team</a></li>
+          <li><a href="#section2">Benifits</a></li>
+          <li><a href="#section3">Features</a></li>
+          <li><a href="#section4">Pricing</a></li>
+          <li><a href="#section5">Team</a></li>
         </ul>
       </div>
       <div>
-        <button class="navbar__menu__btn btn btn__primary">
-          Get Started
-        </button>
+        <a href="https://app.plowterra.com" target="_blank" rel="noopener noreferrer">
+          <button class="navbar__menu__btn btn btn__primary">
+            Login
+          </button>
+        </a>
       </div>
     </nav>
   </header>
   <main class="main">
-    <section class="main__section1">
+    <section class="main__section1" data-aos="fade-up" id="section1">
       <div class="section1__content">
         <h1 class="section1__content__heading txt__white">
           Elevate Your Farm's Efficiency with Seamless Harvest Management
         </h1>
         <p class="section1__content__tagline txt__white">Experience the future of farm management with our intuitive web app. From picker profiles to payroll, we've got you covered every step of the way.</p>
-        <button class="section1__btn btn txt__primary-dark">Get Started</button>
+        <button onclick="onClickDemo(`demo`)" class="section1__btn btn txt__primary-dark" data-aos="zoom-in-down">Request Demo</button>
       </div>
-      <img class="section1__hero_img" src="./assets/hero-img.svg" alt="Hero Image" aria-label="Hero Image" aria-hidden="true">
-    </section>
-    <section class="main__section2">
-      <div class="section2__content">
-        <h2 class="section2__content__heading txt__grey-900">Benefits of using <span class="txt__highlight"> Plowterra </span> for farm management</h2>
-        <p class="section2__col__txt section2__content__tagline txt__grey-700">Ditch the spreadsheets and other manual methods of logging your daily harvest and doing payroll management.</p>
-      </div>
-      <div class="section2__beans">
-        <img class="section2__beans__left" src="./assets/coffee-bean-left.svg" alt="Coffee Bean" aria-hidden="true">
-        <img class="section2__beans__right" src="./assets/coffee-bean-right.svg" alt="Coffee Bean" aria-hidden="true">
-      </div>
-      <div class="section2__grid txt__white">
-        <div class="section2__col">
-          <h3 class="section2__col__heading">100%</h3>
-          <p class="section2__col__tagline">Payroll calculation accuracy</p>
-          <p class="section2__col__txt txt__grey-300">Record picker's daily  production  and  generate payroll automatically.</p>
-        </div>
-        <div class="section2__col">
-          <h3 class="section2__col__heading">+25%</h3>
-          <p class="section2__col__tagline">Increase in lifetime value</p>
-          <p class="section2__col__txt txt__grey-300">Track a variety of metrics to help farm managers make informed business decisions, such as customer lifetime value (CLV).</p>
-        </div>
-        <div class="section2__col">
-          <h3 class="section2__col__heading">$$$<span class="txt__grey-400">$$</span></h3>
-          <p class="section2__col__tagline">Track where you are spending</p>
-          <p class="section2__col__txt txt__grey-300">Log the harvest statistics and deductions with multiple time frames. Review the season report anytime to have a detailed check.</p>
-        </div>
+      <div class="section1__hero__wrapper">
+        <img class="section1__hero__img" src="./assets/hero-img.svg" alt="Hero Image" aria-label="Hero Image" aria-hidden="true">
       </div>
     </section>
-    <section class="main__section3">
-      <div class="section3__content">
-        <h2 class="section3__content__heading txt__grey-900">Have a look at some <span class="txt__highlight"> amazing features </span> of Plowterra</h2>
-      </div>
-
-      <div class="section3__grid">
-        <div class="section3__col">
-          <h3>Picker Management</h3>
-          <p>Whether you have a team of 10 or 200, our shared team inboxes keep everyone on the same page and in the loop.</p>
-          <ul>
-            <li>Add pickers in a short seconds</li>
-            <li>Keep pickers informed via SMS of daily production</li>
-            <li>Leverage individual profile for multiple occassions</li>
-          </ul>
+    <section class="main__section2" id="section2">
+      <div class="section2__wrapper" data-aos="fade-up">
+        <div class="section2__content"> 
+          <h2 class="section2__content__heading txt__grey-900">Benefits of using <span class="txt__highlight"> Plowterra </span> for farm management</h2>
+          <p class="section2__col__txt section2__content__tagline txt__grey-700">Ditch the spreadsheets and other manual methods of logging your daily harvest and doing payroll management.</p>
         </div>
-        <div class="section3__col">
-          <img class="section3__img" src="./assets/picker-management-graphic.svg" alt="">
+        <div class="section2__beans" data-aos="zoom-in">
+          <img class="section2__beans__left" src="./assets/coffee-bean-left.svg" alt="Coffee Bean" aria-hidden="true">
+          <img class="section2__beans__right" src="./assets/coffee-bean-right.svg" alt="Coffee Bean" aria-hidden="true">
+        </div>
+        <div class="section2__grid txt__white">
+          <div class="section2__col">
+            <h3 class="section2__col__heading" id="accuracyTxt">100%</h3>
+            <p class="section2__col__tagline">Payroll calculation accuracy</p>
+            <p class="section2__col__txt txt__grey-300">Record picker's daily  production  and  generate payroll automatically.</p>
+          </div>
+          <div class="section2__col">
+            <h3 class="section2__col__heading" id="valueTxt">+25%</h3>
+            <p class="section2__col__tagline">Increase in lifetime value</p>
+            <p class="section2__col__txt txt__grey-300">Track a variety of metrics to help farm managers make informed business decisions, such as customer lifetime value (CLV).</p>
+          </div>
+          <div class="section2__col">
+            <h3 class="section2__col__heading" id="spendingTxt">$$$<span class="txt__grey-400">$$</span></h3>
+            <p class="section2__col__tagline">Track where you are spending</p>
+            <p class="section2__col__txt txt__grey-300">Log the harvest statistics and deductions with multiple time frames. Review the season report anytime to have a detailed check.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="main__section3" id="section3">
+      <div class="section3__wrapper" data-aos="fade-up">
+        <div class="section3__content">
+          <h2 class="section3__content__heading txt__grey-900">Have a look at some <span class="txt__highlight"> amazing features </span> of Plowterra</h2>
+        </div>
+        <div class="section3__grid" data-aos="fade-left">
+          <div class="section3__col">
+            <h3 class="section3__col__heading txt__grey-900">Picker Management</h3>
+            <p class="section3__col__tagline txt__grey-600">Whether you have a team of 10 or 200, our shared team inboxes keep everyone on the same page and in the loop.</p>
+            <ul class="section3__col__list txt__grey-600">
+              <li>Add pickers in a short seconds</li>
+              <li>Keep pickers informed via SMS of daily production</li>
+              <li>Leverage individual profile for multiple occassions</li>
+            </ul>
+          </div>
+          <div class="section3__col" data-aos="fade-left">
+            <img class="section3__img" src="./assets/picker-management-graphic.svg" alt="Picker Management Image" aria-hidden="true">
+          </div>
+        </div>
+        <div class="section3__grid" data-aos="fade-right">
+          <div class="section3__col">
+            <h3 class="section3__col__heading txt__grey-900">Harvest Season Management</h3>
+            <p class="section3__col__tagline txt__grey-600">An overview of the seasonal statement will be delivered for a boarder perspective that empower you to make smarter decisions.</p>
+            <ul class="section3__col__list txt__grey-600">
+              <li>Set up seasonal report</li>
+              <li>Retrospect historical harvest data</li>
+              <li>Switch between active and closed status</li>
+            </ul>
+          </div>
+          <div class="section3__col" data-aos="fade-right">
+            <img class="section3__img" src="./assets/harvest-season-graphic.svg" alt="Season Management Image" aria-hidden="true">
+          </div>
+        </div>
+        <div class="section3__grid" data-aos="fade-left">
+          <div class="section3__col">
+            <h3 class="section3__col__heading txt__grey-900">Daily Harvest Log</h3>
+            <p class="section3__col__tagline txt__grey-600">Whether its individual production of pickers or daily production of the farm,  log every detail of the product efficiently.</p>
+            <ul class="section3__col__list txt__grey-600">
+              <li>Log daily harvest details</li>
+              <li>Ensure data accuracy with correction notes</li>
+              <li>Check logs with flexible filters</li>
+            </ul>
+          </div>
+          <div class="section3__col" data-aos="fade-left">
+            <img class="section3__img" src="./assets/harvest-log-graphic.svg" alt="Harvest Log Management Image" aria-hidden="true">
+          </div>
+        </div>
+        <div class="section3__grid" data-aos="fade-right">
+          <div class="section3__col">
+            <h3 class="section3__col__heading txt__grey-900">Payroll Management</h3>
+            <p class="section3__col__tagline txt__grey-600">Generate payroll seamless no matter what type of timeframe you choose, ensuring efficient distribution to workers.</p>
+            <ul class="section3__col__list txt__grey-600">
+              <li>Generate preferred timeframe payroll immediately</li>
+              <li>Run the specific picker's payroll timely</li>
+            </ul>
+          </div>
+          <div class="section3__col" data-aos="fade-right">
+            <img class="section3__img" src="./assets/payroll-graphic.svg" alt="Payroll Management Image" aria-hidden="true">
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="main__section4" id="section4">
+      <div class="section4__wrapper" data-aos="fade-up">
+        <div class="section4__content">
+          <h2 class="section4__content__heading txt__grey-900">Plans that <span class="txt__highlight"> your scale </span></h2>
+          <p class="section4__tagline txt__grey-700">Experience the business plan at no cost for 30 days.<br/>Book a demo and activate your complimentary trial today!</p>
+        </div>
+        
+        <div class="section4__grid txt__grey-700">
+          <div class="section4__col" data-aos="zoom-in" data-aos-delay="150">
+            <div class="section4__col__grid">
+              <div>
+                <h4>Basic Plan</h4>
+              </div>
+              <div>
+                <p class="cost__tag"><span class="currency__tag">$</span> 24.99 <span class="duration__tag"> per month </span></p>
+              </div>
+            </div>
+            <p class="plan__tagline">Ideal plan for small farms</p>
+            <ul class="section4__list">
+              <li>1 active season allowed</li>
+              <li>Up to 19 pickers</li>
+              <li>Picker notifications via SMS </li>
+              <li>Analytics dashboard without customization</li>
+              <li>24/7 customer support</li>
+            </ul>
+            <button onclick="onClickDemo(`basic`)" class="plan__btn btn btn__primary">Get Started</button>
+          </div>
+          <div class="section4__col" data-aos="zoom-in" data-aos-delay="350">
+            <div class="section4__col__grid">
+              <div>
+                <h4>Premium Plan <span class="badge__tag__popular">Popular</span></h4>
+              </div>
+              <div>
+                <p class="cost__tag"><span class="currency__tag">$</span> 59.99 <span class="duration__tag"> per month </span></p>
+              </div>
+            </div>
+            <p class="plan__tagline">Advanced features and analytics</p>
+            <ul class="section4__list">
+              <li>All features from the Basic Plan</li>
+              <li>Unlimited number of pickers</li>
+              <li>Unlimited active season manage</li>
+              <li>Customizable dashboard options</li>
+              <li>24/7 customer support</li>
+            </ul>
+            <button onclick="onClickDemo(`premium`)" class="plan__btn btn btn__primary">Get Started</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="main__section5" id="section5">
+      <div class="section5__wrapper" data-aos="fade-up">
+        <div class="section5__content">
+          <h2 class="section5__content__heading txt__grey-900">The <span class="txt__highlight"> team </span> behind Plowterra</h2>
+          <p class="section5__col__tagline txt__grey-600">Meet the team members created this awesome tool</p>
+        </div>
+        
+        <div class="section5__grid">
+          <p><span class="badge__tag">Designers</span></p>
+          <div class="designer__col">
+            <div class="linkedin__wrapper" data-aos="zoom-in" data-aos-delay="200">
+              <a href="#" aria-label="click to view jiali's linkedin profile">
+                <img src="./assets/team/jiali.png" alt="Designer Image" aria-hidden="true">
+                <p class="linkedin__tag">Jiali Cai <img class="linkedin__icon" src="./assets/linkedin-icon.svg" alt="LinkedIn Icon" aria-hidden="true"/></p>
+              </a>
+            </div>
+        
+            <div class="linkedin__wrapper" data-aos="zoom-in" data-aos-delay="200">
+              <a href="#" aria-label="click to view pooja's linkedin profile">
+                <img src="./assets/team/pooja.png" alt="Designer Image" aria-hidden="true">
+                <p class="linkedin__tag">Pooja Chauhan <img class="linkedin__icon" src="./assets/linkedin-icon.svg" alt="LinkedIn Icon" aria-hidden="true"/></p>
+              </a>
+            </div>
+        
+            <div class="linkedin__wrapper" data-aos="zoom-in" data-aos-delay="200">
+              <a href="#" aria-label="click to view yanice's linkedin profile">
+                <img src="./assets/team/yanice.png" alt="Designer Image" aria-hidden="true">
+                <p class="linkedin__tag">Yanice Jiang <img class="linkedin__icon" src="./assets/linkedin-icon.svg" alt="LinkedIn Icon" aria-hidden="true"/></p>
+              </a>
+            </div>
+        
+            <div class="linkedin__wrapper" data-aos="zoom-in" data-aos-delay="200">
+              <a href="#" aria-label="click to view ziwei's linkedin profile">
+                <img src="./assets/team/ziwei.png" alt="Designer Image" aria-hidden="true">
+                <p class="linkedin__tag">Ziwei Liao <img class="linkedin__icon" src="./assets/linkedin-icon.svg" alt="LinkedIn Icon" aria-hidden="true"/></p>
+              </a>
+            </div>
+        
+        
+          </div>
+          <p><span class="badge__tag">Developers</span></p>
+          <div class="developer__col">
+        
+            <div class="linkedin__wrapper" data-aos="zoom-in" data-aos-delay="200">
+              <a href="#" aria-label="click to view wonnyo's linkedin profile">
+                <img src="./assets/team/wonnyo.png" alt="Designer Image" aria-hidden="true">
+                <p class="linkedin__tag">Wonnyo Hamester <img class="linkedin__icon" src="./assets/linkedin-icon.svg" alt="LinkedIn Icon" aria-hidden="true"/></p>
+              </a>
+            </div>
+        
+            <div class="linkedin__wrapper" data-aos="zoom-in" data-aos-delay="200">
+              <a href="#" aria-label="click to view reinhardt's linkedin profile">
+                <img src="./assets/team/rein.png" alt="Designer Image" aria-hidden="true">
+                <p class="linkedin__tag">Reinhardt Botha <img class="linkedin__icon" src="./assets/linkedin-icon.svg" alt="LinkedIn Icon" aria-hidden="true"/></p>
+              </a>
+            </div>
+        
+            <div class="linkedin__wrapper" data-aos="zoom-in" data-aos-delay="200">
+              <a href="#" aria-label="click to view bryan's linkedin profile">
+                <img src="./assets/team/bryan.png" alt="Designer Image" aria-hidden="true">
+                <p class="linkedin__tag">Bryan Calderia <img class="linkedin__icon" src="./assets/linkedin-icon.svg" alt="LinkedIn Icon" aria-hidden="true"/></p>
+              </a>
+            </div>
+        
+            <div class="linkedin__wrapper" data-aos="zoom-in" data-aos-delay="200">
+              <a href="#" aria-label="click to view alberth's linkedin profile">
+                <img src="./assets/team/alberth.png" alt="Designer Image" aria-hidden="true">
+                <p class="linkedin__tag">Alberth Rodriguez <img class="linkedin__icon" src="./assets/linkedin-icon.svg" alt="LinkedIn Icon" aria-hidden="true"/></p>
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </section>
   </main>
+  <footer>
+    <div class="footer__wrapper" data-aos="fade-up" data-aos-delay="500">
+      <div class="footer__logo">
+        <img src="./assets/plowterra-logo-dark.svg" alt="Plowterra Logo" aria-hidden="true">
+      </div>
+      <div class="footer__tagline">
+        <p class="txt__white">Elevate Your Farm's Efficiency with Seamless Harvest Management</p>
+      </div>
+      <div class="footer__btn">
+        <button onclick="onClickDemo(`demo`)" class="btn" data-aos="zoom-in-down">Request Demo</button>
+      </div>
+    </div>
+
+    <div class="footer__links">
+      <ul>
+        <li id="copyRightTxt"></li>
+        <li><a href="#section2">Benifits</a></li>
+        <li><a href="#section3">Features</a></li>
+        <li><a href="#section4">Pricing</a></li>
+        <li><a href="#section5">Team</a></li>
+      </ul>
+    </div>
+  </footer>
+  <script src="./js/aos.js"></script>
+  <script src="./js/popupS.min.js"></script>
+  <script>
+    AOS.init({
+      once: true,
+    })
+
+    const copyRightTxt = document.getElementById("copyRightTxt");
+    copyRightTxt.innerHTML = `&copy; ${ new Date().getFullYear() } Plowterra. All rights reserved.`
+  </script> 
 </body>
 </html>

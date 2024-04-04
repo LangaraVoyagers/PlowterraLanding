@@ -1,0 +1,83 @@
+.main__section4 {
+  background-color: var(--secondary-color-extra-light);
+  overflow: hidden;
+}
+
+.section4__wrapper {
+  padding-top: 100px;
+  padding-bottom: 150px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.section4__content {
+  width: 520px;
+  text-align: center;
+}
+
+.section4__content__heading {
+  font-size: 2.25rem;
+  font-weight: 600;
+}
+
+.section4__grid {
+  display: grid;
+  margin-top: 40px;
+  grid-template-columns: 1fr 1fr;
+  width: 78rem;
+  gap: 2rem;
+}
+
+.section4__col {
+  flex: 50%;
+  background-color: var(--white-color);
+  padding: 2rem;
+  border-radius: var(--border-radius);
+}
+
+.section4__col__grid {
+  display: flex;
+  justify-content: space-between;
+}
+
+.section4__col__grid h4 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.cost__tag {
+  display: flex;
+  font-size: 3rem;
+  margin: 0;
+  font-weight: 600;
+}
+
+.currency__tag {
+  align-self: flex-start;
+  font-size: 2.25rem;
+  font-weight: 600;
+}
+
+.duration__tag {
+  font-size: 1rem;
+  align-self: flex-end;
+}
+
+.section4__list {
+  list-style: none;
+  padding: 0;
+}
+
+.section4__list li {
+  background: url("../assets/check.svg") left;
+  background-repeat: no-repeat;
+  padding-left: 30px;
+  margin-bottom: 20px;
+}
+
+.plan__btn {
+  width: 100%;
+  margin-top: 50px;
+}

@@ -1,7 +1,9 @@
 @import url("./css/variables.css");
-
 @import url("./css/navbar.css");
 @import url("./css/main.css");
+@import url("./css/aos.css");
+@import url("./css/form.css");
+@import url("./css/popupS.min.css");
 
 body {
   font-size: 16px;
@@ -9,6 +11,7 @@ body {
   padding: 0;
   box-sizing: border-box;
   font-family: "Plus Jakarta Sans", sans-serif;
+  background-color: var(--primary-color-dark);
   scroll-behavior: smooth !important;
 }
 
@@ -22,6 +25,10 @@ body {
 
 .txt__grey-700 {
   color: var(--font-grey-700);
+}
+
+.txt__grey-600 {
+  color: var(--font-grey-600);
 }
 
 .txt__grey-400 {
@@ -58,7 +65,34 @@ body {
   border: none;
 }
 
+.btn:hover {
+  background-color: var(--grey-200);
+}
+
 .btn__primary {
   background-color: var(--primary-color-dark);
   color: var(--font-white-color);
+}
+
+.btn__primary:hover {
+  background-color: var(--secondary-color-dark);
+}
+
+.badge__tag__popular {
+  border: 1px solid #F0CC8A;
+  background-color: #FCF4E6;
+  border-radius: 100px;
+  height: 20px;
+  padding: 2px 10px;
+  color: #F0CC8A;
+  font-size: 0.875rem;
+}
+
+.badge__tag {
+  color: #9E6600;
+  background-color: #FCF4E6;
+  padding: 4px 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  border-radius: var(--border-radius);
 }

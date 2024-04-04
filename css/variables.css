@@ -1,7 +1,7 @@
 :root {
   --border-radius: 8px;
   --border-radius-2x: 16px;
-  --navmenu-bg-color: rgba(255, 255, 255, 0.859);
+  --navmenu-bg-color: rgba(255, 255, 255, 0.693);
   --white-color: #FFFFFF;
   --black-color: #000000;
   --font-white-color: #FFFFFF;
@@ -15,6 +15,7 @@
   --grey-600: #57534E;
   --grey-400: #A9A29D;
   --grey-300: #D7D3D0;
+  --grey-200: #f5f5f5;
   --primary-color-dark: #055E40;
   --primary-color-extra-light: #E6EFEC;
   --secondary-color-dark: #DF9000;
