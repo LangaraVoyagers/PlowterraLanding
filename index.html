@@ -8,12 +8,11 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet"/>
   <link rel="stylesheet" href="./style.css"/>
-  <script src="./script.js" defer></script>
 </head>
 <body class="container">
   <header>
     <nav class="navbar__menu">
-      <a href="#">
+      <a href="#" aria-label="Plowterra Logo">
         <img class="navbar__menu__logo" src="./assets/plowterra-logo.svg" alt="Plowterra Logo" aria-label="Plowterra Logo" aria-hidden="true">
       </a>
       <div>
@@ -26,8 +25,8 @@
       </div>
       <div>
         <a href="https://app.plowterra.com" target="_blank" rel="noopener noreferrer">
-          <button class="navbar__menu__btn btn btn__primary">
-            Login
+          <button id="loginBtn" class="navbar__menu__btn btn btn__primary">
+            <span>Login</span> <img class="right__arrow" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAgklEQVR4nO3UsQnCYBRF4T+C+1joBOIKFoo7WGproZ0ukSILZDBJlUI/CQSc4BaBnAHugct7t5SZSYBlMvyGNibBGh1qVCnJFj0eEcEADvjiXFLgMkpOSclzrGuXEizQ4I3VJAWvWEW44oN9IvwYO1P/R7snwjfRqZAeu4Fo+ExJ8wO27adwoHjz0gAAAABJRU5ErkJggg==">
           </button>
         </a>
       </div>
@@ -40,7 +39,7 @@
           Elevate your farm's efficiency with seamless Payroll Management
         </h1>
         <p class="section1__content__tagline txt__white">Experience the future of farm management with our intuitive web app. From picker management to daily harvest logs, we've got you covered every step of the way.</p>
-        <button onclick="onClickDemo(`demo`)" class="section1__btn btn txt__primary-dark" data-aos="zoom-in-down">Request Demo</button>
+        <button onclick="onClickOpenForm(`demo`)" class="section1__btn btn txt__primary-dark" data-aos="zoom-in-down"><span>Request Demo</span><img class="right__arrow" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAtElEQVR4nGNgGAWjgCHUgpM53qGNITSUmSahwRbrsJI1zuE/S6zDPtoEd7QHH0us/QvWWId/LHH2K2hiB2eSixRrrMN7llj7v+zRDn00sYQt3lKDJc7hC2uc/R+WRMdMmljCEutizxpr/4M11uEXc4ydL00sYYp1TGKNdfjNEufwjTXBRXdoWcAc7e4AD6J4B++hE8mc4GRqB0mmsU7d1M9ocdCMFuuwbAgWFaE0LuxGwdAHAF7MQDduSDERAAAAAElFTkSuQmCC"></button>
       </div>
       <div class="section1__hero__wrapper">
         <img class="section1__hero__img" src="./assets/hero-img.svg" alt="Hero Image" aria-label="Hero Image" aria-hidden="true">
@@ -143,7 +142,6 @@
           <h2 class="section4__content__heading txt__grey-900">Plans that <span class="txt__highlight"> your scale </span></h2>
           <p class="section4__tagline txt__grey-700">Experience the business plan at no cost for 30 days.<br/>Book a demo and activate your complimentary trial today!</p>
         </div>
-        
         <div class="section4__grid txt__grey-700">
           <div class="section4__col" data-aos="zoom-in" data-aos-delay="150">
             <div class="section4__col__grid">
@@ -162,7 +160,7 @@
               <li>Analytics dashboard without customization</li>
               <li>24/7 customer support</li>
             </ul>
-            <button onclick="onClickDemo(`basic`)" class="plan__btn btn btn__primary">Get Started</button>
+            <button onclick="onClickOpenForm(`basic`)" class="plan__btn btn btn__primary"><span>Get Started</span></button>
           </div>
           <div class="section4__col" data-aos="zoom-in" data-aos-delay="350">
             <div class="section4__col__grid">
@@ -181,7 +179,7 @@
               <li>Customizable dashboard options</li>
               <li>24/7 customer support</li>
             </ul>
-            <button onclick="onClickDemo(`premium`)" class="plan__btn btn btn__primary">Get Started</button>
+            <button onclick="onClickOpenForm(`premium`)" class="plan__btn btn btn__primary"><span>Get Started</span></button>
           </div>
         </div>
       </div>
@@ -192,9 +190,8 @@
           <h2 class="section5__content__heading txt__grey-900">The <span class="txt__highlight"> team </span> behind Plowterra</h2>
           <p class="section5__col__tagline txt__grey-600">Meet the team members created this awesome tool</p>
         </div>
-        
         <div class="section5__grid">
-          <p><span class="badge__tag">Designers</span></p>
+          <p><span class="badge__tag" id="designersTag">Designers</span></p>
           <div class="designer__col">
             <div class="linkedin__wrapper" data-aos="zoom-in" data-aos-delay="200">
               <a href="https://www.linkedin.com/in/lizjialicai/" target="_blank" aria-label="click to view jiali's linkedin profile">
@@ -202,7 +199,6 @@
                 <p class="linkedin__tag">Jiali Cai <img class="linkedin__icon" src="./assets/linkedin-icon.svg" alt="LinkedIn Icon" aria-hidden="true"/></p>
               </a>
             </div>
-        
             <div class="linkedin__wrapper" data-aos="zoom-in" data-aos-delay="200">
               <a href="https://www.linkedin.com/in/poojachauhan21/" target="_blank"
                 aria-label="click to view pooja's linkedin profile">
@@ -210,14 +206,12 @@
                 <p class="linkedin__tag">Pooja Chauhan <img class="linkedin__icon" src="./assets/linkedin-icon.svg" alt="LinkedIn Icon" aria-hidden="true"/></p>
               </a>
             </div>
-        
             <div class="linkedin__wrapper" data-aos="zoom-in" data-aos-delay="200">
               <a href="https://www.linkedin.com/in/yanicejiang/" target="_blank" aria-label="click to view yanice's linkedin profile">
                 <img src="./assets/team/yanice.png" alt="Designer Image" aria-hidden="true">
                 <p class="linkedin__tag">Yanice Jiang <img class="linkedin__icon" src="./assets/linkedin-icon.svg" alt="LinkedIn Icon" aria-hidden="true"/></p>
               </a>
             </div>
-        
             <div class="linkedin__wrapper" data-aos="zoom-in" data-aos-delay="200">
               <a href="https://www.linkedin.com/in/elisetobetoup/" target="_blank"
                 aria-label="click to view ziwei's linkedin profile">
@@ -225,26 +219,21 @@
                 <p class="linkedin__tag">Ziwei Liao <img class="linkedin__icon" src="./assets/linkedin-icon.svg" alt="LinkedIn Icon" aria-hidden="true"/></p>
               </a>
             </div>
-        
-        
           </div>
-          <p><span class="badge__tag">Developers</span></p>
+          <p><span class="badge__tag" id="developersTag">Developers</span></p>
           <div class="developer__col">
-        
             <div class="linkedin__wrapper" data-aos="zoom-in" data-aos-delay="200">
               <a href="https://www.linkedin.com/in/wonnyo/" target="_blank" aria-label="click to view wonnyo's linkedin profile">
                 <img src="./assets/team/wonnyo.png" alt="Designer Image" aria-hidden="true">
                 <p class="linkedin__tag">Wonnyo Hamester <img class="linkedin__icon" src="./assets/linkedin-icon.svg" alt="LinkedIn Icon" aria-hidden="true"/></p>
               </a>
             </div>
-        
             <div class="linkedin__wrapper" data-aos="zoom-in" data-aos-delay="200">
               <a href="https://www.linkedin.com/in/wrbotha/" target="_blank" aria-label="click to view reinhardt's linkedin profile">
                 <img src="./assets/team/rein.png" alt="Designer Image" aria-hidden="true">
                 <p class="linkedin__tag">Reinhardt Botha <img class="linkedin__icon" src="./assets/linkedin-icon.svg" alt="LinkedIn Icon" aria-hidden="true"/></p>
               </a>
             </div>
-        
             <div class="linkedin__wrapper" data-aos="zoom-in" data-aos-delay="200">
               <a href="https://www.linkedin.com/in/bryan-caldeira/" target="_blank"
                 aria-label="click to view bryan's linkedin profile">
@@ -252,7 +241,6 @@
                 <p class="linkedin__tag">Bryan Calderia <img class="linkedin__icon" src="./assets/linkedin-icon.svg" alt="LinkedIn Icon" aria-hidden="true"/></p>
               </a>
             </div>
-        
             <div class="linkedin__wrapper" data-aos="zoom-in" data-aos-delay="200">
               <a href="https://www.linkedin.com/in/alfaroso/" target="_blank" aria-label="click to view alberth's linkedin profile">
                 <img src="./assets/team/alberth.png" alt="Designer Image" aria-hidden="true">
@@ -264,9 +252,20 @@
         </div>
       </div>
     </section>
+    <div id="settingsBox">
+      <div id="settingsMenu">
+        <div class="settingMenuOptions">
+          <a id="langOption" href="http://127.0.0.1:5500/?lang=en">EN</a>
+        </div>
+        <div class="settingMenuOptions">
+          <a id="modeOption" data-mode="dark">Dark Mode</a>
+        </div>
+      </div>
+      <button id="settingsBtn" aria-label="Settings Button"><img aria-hidden="true" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAADzUlEQVR4nO2az2sTURDHX8l7iVVbEawe/IGg4C/En2itNTOJFoJ6jb+y89JG6a2g6E0tiKBo0b9AT94s4sGrggd/4EG9ehBFi0L0pIdWW01lNtEmNtns29120+rAQCG7ffPZ9+a92e+sEP/tHzBFcEUR/FQax//yMUl4WswUkxqHqkDYLjW+EDPCMqlWpbFQC0QRfBMAUjS6ySy014QoeTQLa0MLcA7tWyE1nBI9nW1O1ykNPfVAlE4cchysp7NNEpyc071neaAQsSyslIRvi0FAPpLFAzVBCAfqg8CFWvdHsrhXEnwo5dNQzILVwUBYsLpK8haUhmuiLxWruPhY50JF8MgFyAOR62ipuDedjpYeQkV+ScL3MZ1YNRUQ5YO8jGaS6zkvpMa7SsP3+hB/fFgS3lLd8Y3RTGKN1PDcYRzvMM0ZWOYEMbEL4ahB8NW8oAhH6l0nCd836+RSYxB3STvNbkG3+ZT0HpwrNbwKPXj9e0bgtUjDfHMQnpVsYlsASycIH5MW7hR+TBL2hw0iNZwTvg1AKo1PwgOBxyKdjvgHKW3DIS2xYd9nSLlJiu8KZTaIXwUSGwIDURrvGS6HvCQ8q7KwWVhd89gVxbfwWuffDPPjRjAUVtdi3jXcD4y3J5Uf5ZbraJGEgwYP5YtItzebB55JtRZLcTjB9ZQieGYEIUSTi1GaDGEeKo1X+ZCWOrnD8UEpjZe5DPC+piHvOECVB6YIP3kdT2p4xzFXAYEffhKTc0IYmiQ4729DgB/VZqT266kbtxKbTEF4A/AHgoXAQTzVQbmOlsYDyRnkR6VQ0Vggis+Mhlha5K8E8VLY+S5ICUcn/1MNZ1g8Y91pWrbf3n0LlMbP3gDgG8fqrFoCSH4PV4SHFeEld2JCaVYIB10fiBruGAR+XxFeZBkpSvF13gQ+0xKFYTKpVqeZMIPAr95KlCCKRsJP9mGXSW61t+U0zOe/SzlhtJykhptixpfxmnfSAMt4O2cMlldgTjjCmlcwFH2pGAtxIc3IOAt3rEL65lCE18OCUBMzM+ALImLFu3yf+AHlSoQS+71RHIVFSuPHBoAYLzrkxZHkEmMO7oWEHzxWOPdMPDZ2XIjYZgq8dxFb4xDHJKairaAIn9rX2G0FPq29tRVYu3ISAWUQDZ8aMNxm7p9U83Cjx5UqCQ+rNHoitlz0VxUebNeqrPUmNb6RWdzta7smvFjrfkmw/XcXIFCI8sYPyzG24OZgysLjdUEsOOI4WO/BuTyWp8bOdNZldine8JaZJR8MzJ5POERRtZwVH9X8N+HdfgHN5LuN+P9fmgAAAABJRU5ErkJggg=="></button>
+    </div>
   </main>
   <footer>
-    <div class="footer__wrapper" data-aos="fade-up" data-aos-delay="500">
+    <div class="footer__wrapper" data-aos="fade-up" data-aos-delay="200">
       <div class="footer__logo">
         <img src="./assets/plowterra-logo-dark.svg" alt="Plowterra Logo" aria-hidden="true">
       </div>
@@ -274,10 +273,9 @@
         <p class="txt__white">Elevate your farm's efficiency with seamless Payroll Management</p>
       </div>
       <div class="footer__btn">
-        <button onclick="onClickDemo(`demo`)" class="btn" data-aos="zoom-in-down">Request Demo</button>
+        <button onclick="onClickOpenForm(`demo`)" class="btn" data-aos="zoom-in-down"><span>Request Demo</span><img class="right__arrow" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAtElEQVR4nGNgGAWjgCHUgpM53qGNITSUmSahwRbrsJI1zuE/S6zDPtoEd7QHH0us/QvWWId/LHH2K2hiB2eSixRrrMN7llj7v+zRDn00sYQt3lKDJc7hC2uc/R+WRMdMmljCEutizxpr/4M11uEXc4ydL00sYYp1TGKNdfjNEufwjTXBRXdoWcAc7e4AD6J4B++hE8mc4GRqB0mmsU7d1M9ocdCMFuuwbAgWFaE0LuxGwdAHAF7MQDduSDERAAAAAElFTkSuQmCC"></button>
       </div>
     </div>
-
     <div class="footer__links">
       <ul>
         <li id="copyRightTxt"></li>
@@ -294,9 +292,106 @@
     AOS.init({
       once: true,
     })
-
-    const copyRightTxt = document.getElementById("copyRightTxt");
-    copyRightTxt.innerHTML = `&copy; ${ new Date().getFullYear() } Plowterra. All rights reserved.`
   </script> 
+  <script type="module" src="./script.js" defer></script>
+  <script>
+    const onClickOpenForm = (plan) => {
+      popupS.modal({
+        content: `
+        <form action="https://formsubmit.co/outsafebc@gmail.com" method="POST">
+          <ul class="form-style-1">
+            <li><label>Full Name <span class="required">*</span></label><input type="text" name="First Name" class="field-divided" placeholder="First" required/> <input type="text" name="Last Name" class="field-divided" placeholder="Last" /></li>
+            <li>
+              <label>Email <span class="required">*</span></label>
+              <input type="email" name="Email" class="field-long" placeholder="Email" required/>
+            </li>
+            <li>
+              <label>Plan Type</label>
+              <select name="Plan Type" class="field-select">
+                <option value="Demo" ${ plan === "demo" ? "selected" : "" }>Demo</option>
+                <option value="Basic" ${ plan === "basic" ? "selected" : "" }>Basic</option>
+                <option value="Premium" ${ plan === "premium" ? "selected" : "" }>Premium</option>
+              </select>
+            </li>
+            <li>
+              <label>Your Message <span class="required">*</span></label>
+              <textarea name="Message" id="field5" class="field-long field-textarea" required></textarea>
+              <input type="hidden" name="_next" value="https://about.plowterra.com/?form-success=true">
+              <input type="hidden" name="_subject" value="Plowterra Application Demo">
+            </li>
+            <li>
+              <input type="submit" value="Submit" />
+            </li>
+          </ul>
+        </form>`
+      });
+    }
+  </script>
+  <script>
+    const theme = {
+      light: {
+        "--navmenu-bg-color": "rgba(255, 255, 255, 0.693)",
+        "--white-color": "#FFFFFF",
+        "--black-color": "#000000",
+        "--font-white-color": "#FFFFFF",
+        "--font-black-color": "#000000",
+        "--font-grey-900": "#1C1917",
+        "--font-grey-700": "#44403C",
+        "--font-grey-600": "#57534E",
+        "--font-grey-400": "#A9A29D",
+        "--font-grey-300": "#D7D3D0",
+        "--grey-900": "#1C1917",
+        "--grey-700": "#44403C",
+        "--grey-600": "#57534E",
+        "--grey-400": "#A9A29D",
+        "--grey-300": "#D7D3D0",
+        "--grey-200": "#f5f5f5",
+        "--primary-color-dark": "#055E40",
+        "--primary-color-extra-light": "#E6EFEC",
+        "--secondary-color-dark": "#DF9000",
+        "--secondary-color-extra-light": "#FBF6F2"
+      },
+      dark: {
+        "--navmenu-bg-color": "rgba(186, 186, 186, 0.693)",
+        "--white-color": "#000000",
+        "--black-color": "#000000",
+        "--font-white-color": "#FFFFFF",
+        "--font-black-color": "#000000",
+        "--font-grey-900": "#ffffff",
+        "--font-grey-700": "#fcfcfc",
+        "--font-grey-600": "#fcfcfc",
+        "--font-grey-400": "#A9A29D",
+        "--font-grey-300": "#D7D3D0",
+        "--grey-900": "#1C1917",
+        "--grey-700": "#44403C",
+        "--grey-600": "#57534E",
+        "--grey-400": "#A9A29D",
+        "--grey-300": "#D7D3D0",
+        "--grey-200": "#f5f5f5",
+        "--primary-color-dark": "#055E40",
+        "--primary-color-extra-light": "#171717",
+        "--secondary-color-dark": "#DF9000",
+        "--secondary-color-extra-light": "#393939"
+      }
+    }
+
+    const changeMode = (newMode) => {
+      if (newMode) localStorage.setItem("mode", newMode);
+      else localStorage.setItem("mode", "light");
+      const mode = localStorage.getItem("mode");
+      const modeOption = document.getElementById("modeOption");
+      modeOption.innerText = `${ newMode === "dark" ? "Light" : "Dark" } Mode`;
+      modeOption.dataset.mode = newMode === "dark" ? "light" : "dark";
+      Object.keys(theme[mode]).forEach(key => {
+        document.documentElement.style.setProperty(key, theme[mode][key]);
+      });
+    }
+
+    document.getElementById("modeOption").addEventListener("click", (e) => {
+      changeMode(e.target.dataset.mode)
+    });
+
+    changeMode(localStorage.getItem("mode"));
+  </script>
 </body>
 </html>

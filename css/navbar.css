@@ -36,6 +36,7 @@ header {
 .navbar__menu__list a {
   text-decoration: none;
   color: var(--black-color);
+  font-weight: 500;
 }
 
 @media only screen and (max-width: 1250px) {

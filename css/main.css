@@ -49,6 +49,10 @@
     width: calc(100% - var(--mobile-box-padding) - var(--mobile-box-padding));
   }
 
+  .main__section5 {
+    padding-bottom: 20px;
+  }
+
   .footer__links ul,
   .footer__tagline,
   .footer__wrapper,
