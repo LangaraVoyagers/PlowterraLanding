@@ -8,6 +8,12 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet"/>
   <link rel="stylesheet" href="./style.css"/>
+  <link rel="icon" type="image/svg+xml" href="./assets/plowterra-logo-sq.svg"/>
+  <meta name="description" content="Elevate your farm's efficiency with seamless Payroll Management"/>
+  <meta property="og:title" content="Plowterra" />
+  <meta property="og:url" content="https:plowterra.com" />
+  <meta property="og:description" content="Elevate your farm's efficiency with seamless Payroll Management" />
+  <meta property="og:image" content="./assets/og_image.png"/>
 </head>
 <body class="container">
   <header>
@@ -389,6 +395,7 @@
 
     document.getElementById("modeOption").addEventListener("click", (e) => {
       changeMode(e.target.dataset.mode)
+      document.getElementById("settingsBtn").click();
     });
 
     changeMode(localStorage.getItem("mode"));
