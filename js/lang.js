@@ -74,7 +74,7 @@ const lang = {
       plans: [{
         mainHeading: "Basic Plan",
         tagline: "Ideal plan for small farms",
-        durationTxt: "per month",
+        durationTxt: "per year",
         list: [
           "1 active season allowed",
           "Up to 19 pickers",
@@ -87,7 +87,7 @@ const lang = {
       {
         mainHeading: `Premium Plan <span class="badge__tag__popular">Popular</span>`,
         tagline: "Advanced features and analytics",
-        durationTxt: "per month",
+        durationTxt: "per year",
         list: [
           "All features from the Basic Plan",
           "Unlimited number of pickers",
@@ -185,7 +185,7 @@ const lang = {
       plans: [{
         mainHeading: "Plan Básico",
         tagline: "Plan ideal para pequeñas explotaciones.",
-        durationTxt: "por mes",
+        durationTxt: "por año",
         list: [
           "1 temporada activa permitida",
           "Hasta 19 recogedoras",
@@ -198,7 +198,7 @@ const lang = {
       {
         mainHeading: `Plan Premium <span class="badge__tag__popular">Popular</span>`,
         tagline: "Funciones y análisis avanzados",
-        durationTxt: "por mes",
+        durationTxt: "por año",
         list: [
           "Todas las funciones del Plan Básico",
           "Número ilimitado de recolectores",
